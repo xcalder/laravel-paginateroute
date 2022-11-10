@@ -12,7 +12,7 @@ class PaginateRouteServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../resources/lang' => base_path('resources/lang/vendor/paginateroute'),
+            __DIR__.'/../lang' => base_path('lang/vendor/paginateroute'),
         ]);
     }
 
