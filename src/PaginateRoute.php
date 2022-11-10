@@ -44,7 +44,7 @@ class PaginateRoute
         $this->urlGenerator = $urlGenerator;
 
         // Unfortunately we can't do this in the service provider since routes are booted first
-        $this->translator->addNamespace('paginateroute', __DIR__.'/../resources/lang');
+        $this->translator->addNamespace('paginateroute', __DIR__.'/../lang');
 
         $this->pageKeyword = $this->translator->get('paginateroute::paginateroute.page');
     }
